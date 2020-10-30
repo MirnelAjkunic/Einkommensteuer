@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    font-family: 'Raleway', sans-serif;
+}
+section{
+    text-align: center;
+}
+.berechne {
+    background-color:black ;
+    color: white;
+    margin: 2%;
+}
+.berechne:hover {
+    background-color: white;
+    color: black;
+}

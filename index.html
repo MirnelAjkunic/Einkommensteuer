@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkommenssteuer-Rechner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <br>
+                <h1>Berechne Deine Steuer bevor es das Finanzamt tut</h1>
+                <h2>Versteuerst Du Dein Einkommen alleine oder</br> mit Deiner/-Deinem Lebenspartnerin/-Partner ?</h2>
+                <input type="radio" name="haushalt" id="single" value="single" onclick="singleFunction()">
+                <label for="single">Ich versteuer mein Einkommen alleine</label></br>
+                <input type="radio" name="haushalt" id="zusammen" value="zusammen" onclick="singleFunction()">
+                <label for="zusammen">Wir versteuern das Einkommen zusammen</label></br>
+                <div>
+                    <div id="single-einkommen">
+                        <h3>Dein jährliches Einkommen</h3>
+                        <input type="number" placeholder="Einkommen" id="single-einkommen-wert"><span> €</span></br>
+                    </div>
+                    <div id="gemeinsames-einkommen">
+                        <h3>Persona 1</h3>
+                        <input type="number" id="zusammen-persona-eins" placeholder="Einkommen"><span> €</span></br>
+                        <h3>Persona 2</h3>
+                        <input type="number" id="zusammen-persona-zwei" placeholder="Einkommen"><span> €</span></br>
+
+                    </div>
+                </div>
+                <label for="steuer-jahr">Wähle dein Jahr</label>
+                <select id="steuer-jahr">
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                </select></br>
+                <input class="berechne" type="button" value="BERECHNE" onclick="berechne()"></br>
+            </div>
+            <div id="ergebnis">
+                <h3>Ergebnis </br> Einkommensteuer : </h3>
+                <h4 id="steuer"></h4>
+
+            </div>
+        </section>
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
